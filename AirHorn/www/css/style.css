@@ -48,9 +48,14 @@ html,body {
     width: 40vmin
 }
 
-.horn .inner .center, .hornAux .innerAux .center{
+.horn .inner .center{
     height: 5vmin;
     width: 5vmin
+}
+
+.hornAux .innerAux .center{
+    height: 3.5vmin;
+    width: 3.5vmin
 }
 
 .horn, .hornAux {
