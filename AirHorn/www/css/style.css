@@ -1,0 +1,88 @@
+/* Empty. Add your own CSS if you like */
+
+.background{
+	background-color: #2196F3;
+}
+
+body {
+    margin: 0;
+    background-color: #2196F3
+}
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+
+html,body {
+    height: 100%; 
+    justify-content: center
+}
+
+#airhorn{
+	display: flex;
+	justify-content:center;
+	margin-top: 30%;
+}
+
+.horn {
+    height: 50vmin;
+    width: 50vmin
+}
+
+.hornAux {
+    height: 20vmin;
+    width: 20vmin
+}
+
+.hornAux .innerAux {
+    height: 16vmin;
+    width: 16vmin
+}
+
+.horn .inner {
+    height: 40vmin;
+    width: 40vmin
+}
+
+.horn .inner .center, .hornAux .innerAux .center{
+    height: 5vmin;
+    width: 5vmin
+}
+
+.horn, .hornAux {
+    background-color: #F44336;
+    box-shadow: 0 5px 2px 0 #1565C0;
+    -webkit-transition: box-shadow .2s cubic-bezier(.4,0,1,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1)
+}
+
+.horn,.horn .inner,.hornAux,.hornAux .innerAux {
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.horn .inner,.hornAux .innerAux  {
+    background-color: #B71C1C
+}
+
+.horn .inner .center,.hornAux .innerAux .center {
+    background-color: #000;
+    opacity: .9;
+    border-radius: 50%
+}
+
