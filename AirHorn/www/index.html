@@ -22,47 +22,46 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/horn.controller.js"></script>
   </head>
-  <body ng-app="starter">
-    <ion-pane class="background">
-      
-        <div id="airhorn">
-          <div class="horn">
-            <div class="inner">
-              <div class="center"></div>
+  <body ng-app="horn" ng-controller="hornController as horn">
+    <ion-pane class="background">     
+      <div id="airhorn">
+        <div class="horn" ng-click="horn.play('horn1')">
+          <div class="inner">
+            <div class="center"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-33" >
+          <div id="airhorn" >
+            <div class="hornAux ha1" ng-click="horn.play('horn2')">
+              <div class="innerAux">
+                <div class="center"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-            <div class="col-33" >
-              <div id="airhorn">
-                <div class="hornAux">
-                  <div class="innerAux">
-                    <div class="center"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-33">
-              <div id="airhorn">
-                <div class="hornAux">
-                  <div class="innerAux">
-                    <div class="center"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-33">
-              <div id="airhorn">
-                <div class="hornAux">
-                  <div class="innerAux">
-                    <div class="center"></div>
-                  </div>
-                </div>
+        <div class="col-33">
+          <div id="airhorn" >
+            <div class="hornAux ha2" ng-click="horn.play('horn3')">
+              <div class="innerAux">
+                <div class="center"></div>
               </div>
             </div>
           </div>
-      
+        </div>
+        <div class="col-33">
+          <div id="airhorn" >
+            <div class="hornAux ha3" ng-click="horn.play('horn4')">
+              <div class="innerAux">
+                <div class="center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
     </ion-pane>
   </body>
 </html>

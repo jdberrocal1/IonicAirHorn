@@ -58,6 +58,13 @@ html,body {
     width: 3.5vmin
 }
 
+.horn .activated, .horn:active, .horn:focus,
+.ha1 .activated, .ha1:active, .ha1:focus,
+.ha2 .activated, .ha2:active, .ha2:focus, 
+.ha3 .activated, .ha3:active, .ha3:focus{
+	box-shadow: 0 5px 2px 0 transparent;
+}
+
 .horn, .hornAux {
     background-color: #F44336;
     box-shadow: 0 5px 2px 0 #1565C0;
